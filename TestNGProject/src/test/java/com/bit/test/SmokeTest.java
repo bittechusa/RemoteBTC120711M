@@ -18,4 +18,18 @@ public class SmokeTest {
 		}
 		System.out.println("nevigate to "+u);
 	}
+	
+	@Parameters({"browser","url"})
+	@Test
+	public void test12(String b,String u) {
+		System.out.println(b);
+		if(b.equals("chrome"))
+		{
+			System.out.println(b +" browser opened");
+		}else if(b.equals("firefox"))
+		{
+			System.out.println(b +" browser opened");
+		}
+		System.out.println("nevigate to "+u);
+	}
 }
