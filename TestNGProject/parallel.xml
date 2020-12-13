@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="smoke" parallel="tests">
+ <test name="coreTest">
+ 
+
+<classes>
+<class name="com.bit.test.RegressionTest" />
+<class name="com.bit.test.SmokeTest">
+
+</class>
+</classes>
+</test>
+
+<test name="coreTest">
+ 
+
+<classes>
+
+<class name="com.bit.test.SmokeTest">
+
+</class>
+</classes>
+</test>
+
+
+</suite>

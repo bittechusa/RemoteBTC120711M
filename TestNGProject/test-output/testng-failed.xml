@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [smoke]">
+  <listeners>
+    <listener class-name="datadriven.BASELISTNER"/>
+  </listeners>
+  <test thread-count="5" name="coreTest1(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="http://www.facebook.com"/>
+    <classes>
+      <class name="com.bit.test.RegressionTest">
+        <methods>
+          <include name="BuyAPants"/>
+          <include name="buyAShirt"/>
+        </methods>
+      </class> <!-- com.bit.test.RegressionTest -->
+    </classes>
+  </test> <!-- coreTest1(failed) -->
+</suite> <!-- Failed suite [smoke] -->
