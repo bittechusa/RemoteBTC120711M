@@ -18,6 +18,7 @@ public class BaseTest {
   public void beforeMethod() {
 	  
 	  System.out.println("opened blankBrowser by shahid");
+	  System.out.println("opened blankBrowser by tanjina");
   }
 
   @AfterMethod
